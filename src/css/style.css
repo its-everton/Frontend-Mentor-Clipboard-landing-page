@@ -1,0 +1,585 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    display: grid;
+    grid-template-areas: "hero hero hero"
+                         "about about about"
+                         "access access access"
+                         "services services services"
+                         "partners partners partners"
+                         "download download download"
+                         "contato contato contato";
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* HERO */
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+
+.hero img {
+    padding: 3%;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--primary-neutral);
+}
+
+.hero p {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    padding: 2% 0;
+    max-width: 800px;
+}
+
+.hero .links {
+    display: flex;
+}
+
+.hero .links .link-ios {
+    padding: 15px 45px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px hsl(171, 66%, 35%);
+}
+
+.hero .links .link-mac {
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px hsl(233, 75%, 62%);
+}
+
+
+
+/* ABOUT */
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+}
+.about .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .text .title-about {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+
+    padding: 5% 0 1% 0;
+}
+
+.about .text .text-about {
+    font-size: 2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    text-align: center;
+    font-weight: 400;
+
+    padding: 1% 0  3% 0;
+    max-width: 762px;
+}
+
+.about .computer-text img{
+    position: relative;
+    left: -5%;
+    width:1000px;
+}
+
+.about .computer-text {
+    display: flex;
+}
+
+.about .computer-text h3 {
+    font-size: 2.5rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+    padding: 20% 0 1% 0;
+}
+
+.about .computer-text p {
+    font-size: 2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    
+    font-weight: 400;
+
+    padding: 1% 0  5% 0;
+    max-width: 440px;
+}
+
+/* ACCESS */
+
+.access {
+    grid-area: access;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.access h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+
+    padding: 10% 0 1% 0;
+}
+
+.access p {
+    font-size: 2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    text-align: center;
+    font-weight: 400;
+
+    padding: 1% 0  10% 0;
+    max-width: 762px;
+}
+
+
+/* SERVICES */
+
+.services {
+    grid-area: services;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .title-services {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+
+    padding: 5% 0 1% 0;
+}
+
+.services .text-services {
+    font-size: 2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    text-align: center;
+    font-weight: 400;
+
+    padding: 1% 0  4% 0;
+}
+
+.services .info {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2% 0 15% 0;
+}
+
+.services .info .blacklist {
+    max-width: 30%;
+}
+
+.services .info .text {
+    max-width: 35%;
+    margin: 0 5%;
+   
+}
+.services .info .preview {
+    max-width: 35%;
+}
+
+
+.services .info h3 {
+    font-size: 2.5rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+    padding: 5% 0;
+}
+
+.services .info p {
+    font-size: 1.8rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    font-weight: 400;
+}
+
+
+
+/* PARTNERS */
+
+.partners {
+    grid-area: partners;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10%;
+}
+
+
+
+/* DOWNLOAD */
+
+.download {
+    grid-area: download;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download h2 {
+    font-size: 4rem;
+    color: var(--primary-neutral);
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+.download p {
+    font-size: 2rem;
+    color: var(--secondary-neutral);
+    line-height: 30px;
+    
+    text-align: center;
+    font-weight: 400;
+
+    padding: 0 0  4% 0;
+}
+
+.download .downloads {
+    display: flex;
+    padding-bottom: 20%;
+}
+
+.download .downloads .download-ios {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px hsl(171, 66%, 35%);
+}
+
+.download .downloads .download-mac {
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px hsl(233, 75%, 62%);
+}
+
+/* CONTATO */
+
+.contato {
+    grid-area: contato;
+    background-color:#f3f3f3; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+}
+
+.contato .logo {
+    width: 80px;
+    height: 80px;
+}
+
+.contato .contatos {
+    display:grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 15px;
+
+}
+
+.contato .contatos p{
+    padding: 10%;
+    line-height: 50px;
+    font-size: 1.7rem, ;
+    color: var(--primary-neutral);
+    font-weight: 400;
+}
+
+.contato .social i{
+    margin: 5px;
+    font-size: 2.5rem;
+    color: var(--primary-neutral);
+}
+
+.contato .social i:hover, 
+.contato .contatos p:hover{
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 908px){
+
+    body {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .hero p{
+        margin: 0 15px;
+    }
+
+    .about .text .text-about {
+        margin: 0 15px;
+    }
+
+    .about .computer-text img{
+        width: 60%;
+        height: 70%;
+    }
+
+    .about .computer-text p {
+        margin-right: 10px;
+    }
+
+    .access p {
+        margin: 0 15px;
+    }
+
+    .access img {
+        width: 75%;
+    }
+
+    .services .info p {
+        margin: 0 5px;
+    }
+
+    .partners img {
+        width: 15%;
+    }
+
+    .download h2 {
+        margin: 0 15px;
+    }
+
+    .download p {
+        margin: 0 15px;
+    }
+
+    .contato .logo {
+        margin: 0 15px 0 0;
+    }
+    
+    .contato .contatos {
+        gap: 1px;
+        display:grid;
+        grid-template-columns: 77px 110px 100px;
+        grid-template-rows: repeat(2, 50px);
+        
+    }
+
+    .contato .contatos p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    body {
+        background-image: url(../images/bg-header-mobile.png);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin: 0 10px;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    .hero .links {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .hero .links .link-ios {
+        margin: 0 0 15px 0;
+    }
+
+    .hero .links .link-mac {
+        margin: 0;
+    }
+
+    .about .text .title-about {
+        font-size: 3rem;
+        margin: 0 15px;
+    }
+
+    .about .text .text-about {
+        font-size: 1.7rem;
+        margin: 0 30px 30px 30px;
+    }
+
+    .about .computer-text  {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+
+    .about .computer-text img {
+        position: static;
+        width: 80%;
+    }
+
+    .about .computer-text .description p{
+        margin: 0 20px;
+    } 
+
+    .access h2 {
+        font-size: 3rem;
+        margin: 0 20px;
+    }
+
+    .access p {
+        font-size: 1.8rem;
+        margin: 0 20px;
+    }
+    
+    .access img {
+        width: 90%;
+    }
+
+    .services .title-services {
+        font-size: 3rem;
+    }
+
+    .services .text-services {
+        font-size: 1.8rem ;
+        margin-bottom: 50px;
+    }
+
+    .services .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services .info .blacklist{
+        max-width: 100%;
+        margin: 0 10px 40px 10px;
+        
+    }
+
+    .services .info .text{
+        max-width: 100%;
+        margin: 0 10px 40px 10px;
+    }
+
+    .services .info .preview{
+        max-width: 100%;
+        margin: 0 10px 40px 10px;
+    }
+
+    .partners img {
+        width: 15%;
+        margin: 0 5px;
+    }
+
+    .download h2 {
+        font-size: 3rem;
+        margin: 0 15px 0 15px;
+    }
+
+    .download p {
+        font-size: 1.8rem;
+        margin: 0 15px 0 15px;
+    }
+
+    .download .downloads {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        
+    }
+
+    .download .downloads .download-ios {
+        margin: 0 0 15px 0;
+    }
+
+    .download .downloads .download-mac {
+        margin: 0;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        align-items: center;
+    }
+
+    .contato .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contato .contatos{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+
+    .contato .contatos p {
+        padding: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+}
